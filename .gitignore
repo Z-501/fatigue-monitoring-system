@@ -1,41 +1,39 @@
-# 本仓库为项目展示仓库，不提交完整源码、真实数据、依赖目录和运行产物
-
-# dependency/build output
-node_modules/
-dist/
-build/
-target/
-.dart_tool/
-.pytest_cache/
-__pycache__/
-*.pyc
-
-# IDE / local
-.idea/
-.vscode/
-*.iml
+# System
 .DS_Store
 Thumbs.db
 
-# secrets / runtime data
-.env
-.env.*
-!.env.example
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
 *.log
 logs/
-data/
-uploads/
-*.sqlite
-*.db
 
-# model / dataset / binary artifacts
+# Dependencies and build outputs
+node_modules/
+target/
+build/
+dist/
+.dart_tool/
+.gradle/
+__pycache__/
+.pytest_cache/
+
+# Secrets and local config
+.env
+.env.*
+application-local.yml
+application-local.properties
+
+# Large or private data
 *.pth
 *.pt
-*.onnx
 *.ckpt
-*.h5
 *.mat
-*.zip
-*.rar
-*.7z
-*.mp4
+*.set
+*.fdt
+data/
+outputs/
+uploads/
